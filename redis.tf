@@ -55,7 +55,6 @@ resource kubernetes_deployment redis {
       }
 
       spec {
-        active_deadline_seconds          = 0
         automount_service_account_token  = false
         dns_policy                       = "ClusterFirst"
         enable_service_links             = false
